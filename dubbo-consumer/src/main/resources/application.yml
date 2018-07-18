@@ -1,0 +1,12 @@
+server:
+  port: 8082
+spring:
+  dubbo:
+    application:
+      name: consumer
+    registry:
+      address: zookeeper://127.0.0.1:2181
+    scan: com.pzlove.service
+logging:
+  level:
+    root: info
